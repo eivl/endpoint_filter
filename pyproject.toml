@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "endpoint-filter"
-version = "0.1.1"
+version = "0.1.2"
 homepage = "https://github.com/eivl/endpoint_filter"
 description = "An endpoint filter for the standard library logging module."
 authors = ["Eivind Teig <eivind.teig@gmail.com>"]

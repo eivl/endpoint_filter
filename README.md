@@ -13,6 +13,7 @@ from endpoint_filter import EndpointFilter
 app = FastAPI()
 uvicorn_logger = logging.getLogger("uvicorn.access")
 uvicorn_logger.addFilter(EndpointFilter(path="/live"))
+uvicorn_logger.addFilter(EndpointFilter(path="/live", verb="POST"))
 uvicorn_logger.addFilter(EndpointFilter(path="/endpoint"))
 
 
