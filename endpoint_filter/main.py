@@ -36,4 +36,4 @@ class EndpointFilter(logging.Filter):
         host, verb, path, version, status_code, *_ = record.args
         if verb != self._verb:
             return True
-        return record.getMessage().find(self._path) == -1
+        return path.find(self._path) == -1
